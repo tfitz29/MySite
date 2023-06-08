@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
+  <script src="src/script.js"></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul style="display: inline;">
+        <li style="display: inline; margin-right: 10px;"><a href="#home" onclick="navigateToSection('home')">Home</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="#about" onclick="navigateToSection('about')">About me</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="#about" onclick="navigateToSection('experience')">Experiences</a></li>
+        <li style="display: inline;"><a href="#contact" onclick="navigateToSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="home-content">
+      <h1>Homepage for Trevor Fitzsimmons</h1>
+      <p class="tagline">Passionate about getting stuff DONE </p>
+      <img src="media/dayton pic.jpeg" alt = "picofme" style = "width:300px"> 
+      <p class="tagline"> BS in Computer Science from the University of Dayton </p>
+      <p class="tagline"><a href="media\RESUME2023_w.pdf">Resume</a></p>
+    </div>
+  </section>
+
+  <section id = "about">
+    <h1>About Me</h1>
+  </section>
+
+  <section id="experience">
+    <h1>Experiences</h1>
+    <h3>Work</h3>
+    Lead Instructor | Black Rocket Productions | Elgin, IL <br>
+    JUNE 2022 – AUGUST 2022<br>
+    -The lead instructor for various classes including python development, Roblox studio, YouTube content creation, app development, and more. Responsible for taking care of kids as role of camp leader.<br><br>
+    Delivery Assistant | Town and Country Distributors | Itasca, IL<br>
+    MAY 2021 – AUGUST 2021<br>
+    -Assisted truck drivers in unloading of semi-truck over many stops over the course of a day.<br><br>
+    Electrical Engineering Intern | Riverside Research | Beavercreek, OH<br>
+    MAY 2020 – DECEMBER 2020<br>
+    -Learned the fundamentals of radar engineering through python-based work in contract with National Air and Space Intelligence Agency. Had to obtain and maintain security clearance throughout. Work was done in SCRUM format.<br><br>
+    Professional Dog Bather | Animal Care Clinic | Algonquin, IL<br>
+    MAY 2018 – AUGUST 2019<br>
+    -Bathed/dried dogs and general cleaning of store.<br><br>
+    <h3>Education</h3>
+    University of Dayton: BS in Computer Science<br>
+    AUGUST 2019 - MAY 2023<br>
+    -Concentration in software engineering <!-- Add your personal information and a description of yourself -->
+  </section>
+
+  <section id="contact">
+    <h1>Contact Me</h1>
+    <p class="tagline"> Open to remote work or on-site locations in the Greater Chicago Area </p>
+    <p class="tagline"> E-mail - tfitz2929@gmail.com</p>
+    <p class="tagline"> Cell - +1 (847) 361-3691</p>
+    <p class="tagline"><a href="https://www.linkedin.com/in/trevorfitzsimmons/">LinkedIn</a></p>
+    <p class="tagline"><a href="media\RESUME2023_w.pdf">Resume</a></p>
+    <!-- Add your contact information or a contact form -->
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Trevor Fitzsimmons. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function navigateToSection(sectionId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
+
+      const selectedSection = document.getElementById(sectionId);
+      selectedSection.style.display = 'block';
+    }
+  </script>
+</body>
+</html>

@@ -6,122 +6,7 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="src/script.js"></script>
-  <style>
-    /* Reset default browser styles */
-    body, h1, h2, h3, h4, h5, h6, p, ul, li {
-      margin: 0;
-      padding: 0;
-    }
-    
-    body {
-      font-family: 'Helvetica', sans-serif;
-      background-color: #000000;
-      color: #ffffff;
-    }
-    
-    header {
-      background-color: #012b0200;
-      color: #ffffff;
-      padding: 20px;
-    }
-    
-    nav ul {
-      list-style: none;
-    }
-    
-    nav ul li {
-      display: inline;
-      margin-right: 10px;
-    }
-    
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    
-    nav ul li a:hover {
-      color: #9936ac;
-    }
-    
-    section {
-      padding: 20px;
-      margin-bottom: 20px;
-      background-color: #020903;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    
-    h1, h2, h3 {
-      margin-bottom: 10px;
-    }
-    
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    footer p {
-      margin: 0;
-    }
-    
-    #home {
-      height: 100vh;
-      background-image: radial-gradient(rgb(14, 97, 10), rgb(13, 32, 13), rgb(0, 0, 0));
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffffff;
-      text-align: center;
-    }
-    
-    .home-content {
-      max-width: 600px;
-    }
-    
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    
-    .tagline {
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
-    }
-    
-    .btn {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: #ffffff;
-      color: #000000;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-    }
-    
-    .btn:hover {
-      background-color: #eeeeee;
-    }
-    
-    /* Media queries for responsiveness */
-    @media screen and (max-width: 768px) {
-      header {
-        padding: 10px;
-      }
-      nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 10px;
-  }
-    }
-  </style>
+
 </head>
 <body>
   <div class="container">
@@ -139,7 +24,7 @@
   <section id="home">
     <div class="home-content">
       <h1>Homepage for Trevor Fitzsimmons</h1>
-      <p class="tagline">Passionate about getting stuff DONE</p>
+      <p class="tagline"></p>
       <img src="media/dayton pic.jpeg" alt="picofme" style="width: 300px">
       <p class="tagline">BS in Computer Science from the University of Dayton</p>
       <p class="tagline"><a href="media\RESUME2023_w.pdf">Resume</a></p>
@@ -148,36 +33,33 @@
 
   <section id="about">
     <h1>About Me</h1>
+    <p>Originally, I went to Elgin Community College without the notion of what I wanted to do. I started my time at the University of Dayton as an Electrical Engineering major but I switched this to Computer Science not too long after
+      after interning at Riverside Research where I worked on radar engineering concepts. This May, I graduated and I 
+      am currently employed by Black Rocket Productions as the role of a Lead Instructor 
+      for coding/design lessons. I am actively pursuing full-time positions or an internship that
+      puts me in a good situation to succeed in the field of software testing, business analyst, or user design experience in the future. 
+    </p>
   </section>
 
   <section id="experience">
     <h1>Experiences</h1>
-    <h3>Work</h3>
-    <p>
-      Lead Instructor | Black Rocket Productions | Elgin, IL<br>
-      JUNE 2022 – AUGUST 2022<br>
-      -The lead instructor for various classes including python development, Roblox studio, YouTube content creation, app development, and more. Responsible for taking care of kids as role of camp leader.
+    <h2>Work</h2>
+    <p class="tagline">
+      Lead Instructor | Black Rocket Productions | Elgin, IL | June 2022 – August 2022<br>
     </p>
-    <p>
-      Delivery Assistant | Town and Country Distributors | Itasca, IL<br>
-      MAY 2021 – AUGUST 2021<br>
-      -Assisted truck drivers in unloading of semi-truck over many stops over the course of a day.
+    <p class="tagline">
+      Delivery Assistant | Town and Country Distributors | Itasca, IL | May 2021 – August 2021<br><br>
     </p>
-    <p>
-      Electrical Engineering Intern | Riverside Research | Beavercreek, OH<br>
-      MAY 2020 – DECEMBER 2020<br>
-      -Learned the fundamentals of radar engineering through python-based work in contract with National Air and Space Intelligence Agency. Had to obtain and maintain security clearance throughout. Work was done in SCRUM format.
+    <p class="tagline">
+      Electrical Engineering Intern | Riverside Research | Beavercreek, OH | May 2020 – December 2020<br><br>
     </p>
-    <p>
-      Professional Dog Bather | Animal Care Clinic | Algonquin, IL<br>
-      MAY 2018 – AUGUST 2019<br>
-      -Bathed/dried dogs and general cleaning of store.
+    <p class="tagline">
+      Professional Dog Bather | Animal Care Clinic | Algonquin, IL | May 2018 – August 2019<br><br>
     </p>
-    <h3>Education</h3>
-    <p>
-      University of Dayton: BS in Computer Science<br>
-      AUGUST 2019 - MAY 2023<br>
-      -Concentration in software engineering
+    <h2>Education</h2>
+    <p class="tagline">
+      University of Dayton: BS in Computer Science | August 2019 - May 2023<br>
+      -Concentration in software engineering<br>
     </p>
   </section>
 
@@ -189,7 +71,7 @@
     <p class="tagline"><a href="https://www.linkedin.com/in/trevorfitzsimmons/">LinkedIn</a></p>
     <p class="tagline"><a href="media\RESUME2023_w.pdf">Resume</a></p>
   </section>
-
+</div>
   <footer>
     <p>&copy; 2023 Trevor Fitzsimmons. All rights reserved.</p>
   </footer>
@@ -205,6 +87,5 @@
       selectedSection.style.display = 'block';
     }
   </script>
-  </div>
 </body>
 </html>

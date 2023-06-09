@@ -2,6 +2,7 @@
 body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
     padding: 0;
+    
   }
   
   body {
@@ -11,23 +12,19 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   }
   
   header {
-    background-color: #012b0200;
+    background-color: #00000000;
     color: #ffffff;
     padding: 20px;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
+    display: flex;
+    }
+  
   nav ul {
     list-style: none;
+    display: flex;
   }
   
   nav ul li {
-    display: inline;
     margin-right: 10px;
   }
   
@@ -47,6 +44,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
     background-color: #020903;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
   
   h1, h2, h3 {
@@ -63,10 +61,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   footer p {
     margin: 0;
   }
-
+  
   #home {
     height: 100vh;
-    background-image: radial-gradient(rgb(14, 97, 10), rgb(13, 32, 13), rgb(0, 0, 0));
+    background-image: rgb(0, 0, 0);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -115,4 +113,3 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
       margin-bottom: 5px;
     }
   }
-  

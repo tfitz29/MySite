@@ -41,14 +41,21 @@ nav ul li a:hover {
 }
 
 .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   max-width: 960px;
   margin: 0 auto;
-  padding-top: 80px; /* Added padding-top */
+  padding: 20px;
+}
+
+.section-container {
+  flex: 0 0 calc(50% - 20px); /* Adjust the value to your desired spacing between columns */
+  margin-bottom: 20px;
 }
 
 section {
   padding: 40px;
-  margin-bottom: 40px;
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -108,11 +115,43 @@ footer p {
 
 #home {
   padding: 40px;
-  margin-bottom: 40px;
+  margin: 80px auto; /* Adjust the margin values as needed */
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 80px; /* Added margin-top */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#about {
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+}
+
+#about h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#about p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+#about ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+#about ul li {
+  margin-bottom: 10px;
 }
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
